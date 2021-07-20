@@ -134,6 +134,7 @@ class Administrateur
         return $this;
     }
 
+
     public function getMotDePasse(): ?string
     {
         return $this->motDePasse;
@@ -199,4 +200,7 @@ class Administrateur
 
         return $this;
     }
+    public function __toString(){
+        return $this->username;
+       }
 }
