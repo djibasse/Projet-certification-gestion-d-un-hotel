@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css">
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
@@ -26,12 +26,14 @@
           <a class="nav-link" href="/annonce">Anonnces</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" {{ path('creation_client') }}>Clients</a>
+          <a class="nav-link" >Clients</a>
         </li>
        </ul>
     </div>
   </div>
 </nav>
+<div class="container"> 
         {% block body %}{% endblock %}
-    </body>
+</div>
+</body>
 </html>
